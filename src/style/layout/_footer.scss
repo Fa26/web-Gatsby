@@ -1,5 +1,6 @@
 .footer {
-  background-color: $dark-grey;
+  background: linear-gradient(to right, #FCA5F1,#B5FFFF);
+
   color: $white-color;
   padding: 4.8rem 0;
 
@@ -9,11 +10,12 @@
 
   &__text {
     color: darken(white, 50%);
-    font-size: 1.3rem;
+    font-size: 1.9rem;
 
     a {
-      color: darken(white, 50%);
-      font-size: 1.3rem;
+    color:pink;
+    //  color: darken(white, 50%);
+      font-size: 1.9rem;
       transition: all 0.4s;
       display: inline-block;
       background-color: $dark-grey;
@@ -42,18 +44,20 @@
   justify-content: center;
 
   a {
+    background:pink;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $white-color;
-    font-size: 3rem;
+    font-size: 3.9rem;
     width: 5rem;
     height: 5rem;
     margin: $default-font-size $default-font-size;
     transition: all 0.2s ease-in;
 
     &:hover {
-      transform: translateY(-2px);
+      transform: translateY(-9px);
+      color:$dark-blue-text;
+      background:$pinkR;
     }
   }
 }
@@ -68,3 +72,32 @@
     transform: translateY(-2px);
   }
 }
+
+
+
+
+  .c1 {
+  background: linear-gradient(to right, #FCA5F1,#B5FFFF);
+  position: absolute;
+  left: 180px;
+  width: 100px;
+  height: 100px;
+  bottom: -600px;
+  border-radius: 50%;
+  z-index: 999;
+  animation: circle 5s linear infinite;
+}
+  .c2 {
+  background: linear-gradient(to right, #FCA5F1,#B5FFFF);
+  position: absolute;
+  left: 780px;
+  width: 200px;
+  height: 200px;
+  bottom: 0px;
+  border-radius: 50%;
+  z-index: 999;
+  animation: circle 7s linear infinite;
+}
+ @keyframes circle{
+  0%{transform:translateY(1990px)}}
+

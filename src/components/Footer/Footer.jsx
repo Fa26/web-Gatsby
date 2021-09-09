@@ -37,14 +37,17 @@ const Footer = () => {
             })}
         </div>
         <hr />
+       <div className="c1"></div>
+
+
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          © {new Date().getFullYear()}
+        
         </p>
 
         {isEnabled && <GithubButtons />}
+        <div className="c2"></div>
+
       </Container>
     </footer>
   );

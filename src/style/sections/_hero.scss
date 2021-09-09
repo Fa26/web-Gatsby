@@ -4,9 +4,11 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: linear-gradient(to right, #FCA5F1,#B5FFFF);
+  
+  //background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $white-like-my-mind;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;

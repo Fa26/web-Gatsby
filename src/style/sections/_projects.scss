@@ -1,6 +1,8 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  background: linear-gradient(to right, #FCA5F1,#B5FFFF);
+  //background-color: $white-color;
+ // color: $dark-blue-text;
+ color:#fff;
   margin-top: -15rem;
   padding-top: 15rem;
 
@@ -37,14 +39,15 @@
       &-title {
         font-weight: bold;
         margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
-
+        //font-size: $mid-font-size;
+        font-size:4.9rem;
         @include respond(phone) {
           font-size: 2rem;
         }
       }
 
       & p > a {
+        font-size:2.8rem;
         color: $secondary-color;
       }
     }
@@ -58,7 +61,7 @@
         margin: 0;
       }
 
-      & .thumbnail {
+     /* & .thumbnail {
         border: none;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.2s ease-out;
@@ -71,7 +74,31 @@
           box-shadow: none;
           margin-bottom: 3.2rem;
         }
-      }
+      }*/
     }
   }
 }
+
+
+   .jump{
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+     
+        transform-origin: bottom;
+    
+    }
+    .bounce-6 {
+        animation-name: bounce-6;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-6 {
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+    }
+
+

@@ -2,22 +2,22 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Fatima', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'Programmer', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'Hi,',
+  name: 'Chuckaboo',
+  subtitle: 'Be Bricky',
+  cta: 'woot!!',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'tobe.jpg',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -28,32 +28,31 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'cdog.png',
+    title: 'Floosy',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    //repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
+
+
+];
+
+//MIDLE SECTION
+export const midleData =[
   {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    id:nanoid(),
+    img:'project.jpg',
+    info:'',
+    info2:'',
+    url:'',
+    //repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+
   },
 ];
+
+
 
 // CONTACT DATA
 export const contactData = {

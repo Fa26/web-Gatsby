@@ -1,11 +1,16 @@
+
+
 #contact {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+
+  background: linear-gradient(to right, #FCA5F1,#B5FFFF);
+
+ /* -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);*/
   padding: 15rem 0 10rem 0;
   margin-top: -15rem;
   margin-bottom: -1px;
   color: $white-color;
+
 
   @include respond(tab-land) {
     padding: 10rem 0;
@@ -25,7 +30,7 @@
 
     &__text,
     a {
-      font-size: 2.4rem;
+      font-size: 3.4rem;
 
       // Responsive for contact text
       @include respond(phone) {
@@ -34,3 +39,10 @@
     }
   }
 }
+
+.gradient-text{
+   background-image: linear-gradient(90deg,red,blue);
+   background-clip: text;
+   color: transparent;
+}
+
